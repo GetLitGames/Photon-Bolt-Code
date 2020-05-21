@@ -1,4 +1,4 @@
-# Photon-Bolt-Code
+# Animation
 
 This code is meant as an illustration and doesn't work as-is without some changes.
 
