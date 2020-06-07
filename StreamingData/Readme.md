@@ -9,4 +9,6 @@ foreach(BoltConnection client in BoltNetwork.Clients) {
 	client.StreamBytes(WorldVoxelStreamCallbacks.WorldVoxelChannel, data);
 }
 
+The StreamDataReceived will fire, and all the clients will reload whatever the server sent the same as if they had just connected.
+Just make sure your LoadGameFromByteArray() or whatever code you place there takes care of whatever is necessary to ensure a clean game load.
 
