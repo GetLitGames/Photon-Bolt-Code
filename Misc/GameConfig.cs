@@ -10,7 +10,7 @@ public class GameConfig : Singleton<GameConfig>
 	[System.NonSerialized]
 	public Configuration cfg = new Configuration();
 
-	void Start()
+	void Awake()
 	{
 		if (!File.Exists (configFileName))
 		{
